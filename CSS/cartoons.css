@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin 0;
+    background: url("../IMG/cinema.jpg");
+    background-size: 1595px 1133px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+nav {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 5vh;
+    background-color: #f5ffd6;
+    display: flex;
+}
+
+
+ul {
+    text-align: center;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #ff0027;
+    transition: 0.3s;
+}
+
+.highlighted {
+    color: #ff0027;
+}
+
+.media {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    width: 1080px;
+    height: 495px;
+    transform: translate(-50%,-50%);
+    background-color: #f5ffd6;
+    padding: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+ 
+.bblock {
+    float: left;
+    height: 495px;
+    width: 330px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #f5ffd6;
+    margin-right: 45px;
+}
+
+.media :last-child {
+    margin-right: 0px;
+}

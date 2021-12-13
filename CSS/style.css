@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin 0;
+    background: url("../IMG/cinema.jpg");
+    background-size: 1595px 1133px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #f5ffd6;
+    border-right: 4px solid #E0E5EA;
+    left: -254px;
+    
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li:first-child {
+    text-align: center;
+    color: black;
+    font-size: 1.95em;
+    font-weight: bold;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child) {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1em;
+    font-weight: bold;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    color: #ff0027;
+    transition: 0.3s;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: #f5ffd6;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {
+    background: black;
+}
+
+#sidebar .toggle-btn:hover span {
+    background: #fafafa;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.highlighted {
+    color: #ff0027;
+}
+
+.card {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    width: 650px;
+    height: 155px;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f5ffd6;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
